@@ -19,63 +19,69 @@
 
   <script>
     const preguntas = [
-        ["¿A qué virreinato pasaron las provincias de Maynas, Quijos y Canelos en 1802?", "Virreinato del Perú"],
-        ["¿Cuándo fue el Primer Grito de la Independencia en Ecuador?", "10 de agosto de 1809"],
-        ["¿Qué ciudad declaró su independencia el 9 de octubre de 1820?", "Guayaquil"],
-        ["¿En qué batalla en 1822 Ecuador se incorporó a la Gran Colombia?", "Batalla de Pichincha"],
-        ["¿Qué tratado firmado en febrero de 1829 no definía límites?", "Tratado de Girón"],
-        ["¿Qué tratado puso fin a la guerra entre la Gran Colombia y Perú?", "Tratado de Guayaquil"],
-        ["¿Cuándo se separó Ecuador de la Gran Colombia?", "13 de mayo de 1830"],
-        ["¿Qué presidente ecuatoriano firmó el Tratado de Mapasingue en 1860?", "Guillermo Franco"],
-        ["¿Qué guerra debilitó a Perú entre 1879 y 1884?", "Guerra del Pacífico"],
-        ["¿Qué presidente ecuatoriano defendió la soberanía en 1910?", "Eloy Alfaro"],
-        ["¿Cuándo fue la guerra entre Ecuador y Perú en la que se aplicó una táctica Blitzkrieg?", "Julio de 1941"],
-        ["¿Qué tratado se firmó el 29 de enero de 1942?", "Protocolo de Río de Janeiro"],
-        ["¿Qué conflicto ocurrió el 22 de febrero de 1981?", "Conflicto de Paquisha"],
-        ["¿Qué presidente gobernaba Ecuador durante el conflicto de Paquisha?", "Jaime Roldós"],
-        ["¿Cuándo comenzó el conflicto del Alto Cenepa?", "26 de enero de 1995"],
-        ["¿Qué presidente gobernaba Ecuador durante el conflicto del Alto Cenepa?", "Sixto Durán-Ballén"],
-        ["¿Cuál fue el nombre del plan de campaña ecuatoriano en 1995?", "Soberanía I"],
-        ["¿Quién fue el comandante del Agrupamiento Táctico Miguel Iturralde?", "TCRN Luis Hernández"],
-        ["¿Qué nombre recibió el bombardeo masivo del 22 de febrero de 1995?", "La noche de las luciérnagas"],
-        ["¿Cuántos helicópteros peruanos fueron derribados en el conflicto del Cenepa?", "Tres"],
-        ["¿Qué documento se firmó el 26 de octubre de 1998?", "Acta de Brasilia"],
-        ["¿Qué territorio recibió Ecuador en Tiwintza tras la firma de paz?", "1 km² en cesión perpetua con fines ceremoniales"],
-        ["¿Qué zonas fueron ofrecidas a Ecuador para comercio internacional?", "Saramiriza y Pijuayal"],
-        ["¿Qué país se enfrentó a Ecuador en el conflicto del Cenepa?", "Perú"],
-        ["¿En qué año estableció Perú el Puesto de Vigilancia N.º 1, Soldado Pastor?", "1987"],
-        ["¿Qué destacamento ecuatoriano fue creado en 1979 para sustentar las posiciones en el Valle del Cenepa?", "Destacamento Coangos"],
-        ["¿Qué agrupamiento creó Ecuador ante la amenaza peruana en diciembre de 1994?", "Agrupamiento General Iturralde"],
-        ["¿Qué oficial ecuatoriano informó sobre la presencia enemiga el 23 de enero de 1995?", "Coronel José Grijalba"],
-        ["¿Qué día se activó la alerta roja durante el conflicto del Cenepa?", "26 de enero de 1995"],
-        ["¿Qué agrupamiento se creó el 6 de febrero para reforzar la defensa ecuatoriana?", "Agrupamiento Carlomagno Andrade"],
-        ["¿Qué brigada especial fue organizada el 13 de febrero de 1995?", "Brigada Especial Eloy Alfaro"],
-        ["¿Cuál fue el primer soldado ecuatoriano caído en el conflicto del Cenepa?", "Soldado Pico"],
-        ["¿Qué fecha se retiró el primer contingente ecuatoriano tras los acuerdos de Itamaratí?", "1 de abril de 1995"],
-        ["¿Cuántos soldados ecuatorianos murieron durante el conflicto del Cenepa?", "31 soldados"],
-        ["¿Qué país fue acusado por el Gral. Pinochet como agresor en el conflicto?", "Perú"]
-   ];
-    
-
+      ["¿A qué virreinato pasaron las provincias de Maynas, Quijos y Canelos en 1802?", "Virreinato del Perú", ["Virreinato de la Nueva Granada", "Virreinato del Perú", "Virreinato de México"]],
+      ["¿Cuándo fue el Primer Grito de la Independencia en Ecuador?", "10 de agosto de 1809", ["10 de agosto de 1809", "9 de octubre de 1820", "24 de mayo de 1822"]],
+      ["¿Qué ciudad declaró su independencia el 9 de octubre de 1820?", "Guayaquil", ["Quito", "Guayaquil", "Cuenca"]],
+      ["¿En qué batalla en 1822 Ecuador se incorporó a la Gran Colombia?", "Batalla de Pichincha", ["Batalla de Pichincha", "Batalla de Tarqui", "Batalla de Junín"]],
+      ["¿Qué tratado firmado en febrero de 1829 no definía límites?", "Tratado de Girón", ["Tratado de Girón", "Tratado de Guayaquil", "Protocolo de Río de Janeiro"]],
+      ["¿Qué tratado puso fin a la guerra entre la Gran Colombia y Perú?", "Tratado de Guayaquil", ["Tratado de Guayaquil", "Tratado de Girón", "Acta de Brasilia"]],
+      ["¿Cuándo se separó Ecuador de la Gran Colombia?", "13 de mayo de 1830", ["13 de mayo de 1830", "10 de agosto de 1809", "24 de mayo de 1822"]],
+      ["¿Qué presidente ecuatoriano firmó el Tratado de Mapasingue en 1860?", "Guillermo Franco", ["Gabriel García Moreno", "Guillermo Franco", "Eloy Alfaro"]],
+      ["¿Qué guerra debilitó a Perú entre 1879 y 1884?", "Guerra del Pacífico", ["Guerra del Pacífico", "Guerra de Paquisha", "Guerra del Cenepa"]],
+      ["¿Qué presidente ecuatoriano defendió la soberanía en 1910?", "Eloy Alfaro", ["Eloy Alfaro", "José María Velasco Ibarra", "Sixto Durán-Ballén"]],
+      ["¿Cuándo fue la guerra entre Ecuador y Perú en la que se aplicó una táctica Blitzkrieg?", "Julio de 1941", ["Julio de 1941", "Febrero de 1981", "Enero de 1995"]],
+      ["¿Qué tratado se firmó el 29 de enero de 1942?", "Protocolo de Río de Janeiro", ["Protocolo de Río de Janeiro", "Tratado de Guayaquil", "Acta de Brasilia"]],
+      ["¿Qué conflicto ocurrió el 22 de febrero de 1981?", "Conflicto de Paquisha", ["Conflicto de Paquisha", "Conflicto del Cenepa", "Guerra del Pacífico"]],
+      ["¿Qué presidente gobernaba Ecuador durante el conflicto de Paquisha?", "Jaime Roldós", ["Jaime Roldós", "Sixto Durán-Ballén", "Eloy Alfaro"]],
+      ["¿Cuándo comenzó el conflicto del Alto Cenepa?", "26 de enero de 1995", ["26 de enero de 1995", "22 de febrero de 1981", "29 de enero de 1942"]],
+      ["¿Qué presidente gobernaba Ecuador durante el conflicto del Alto Cenepa?", "Sixto Durán-Ballén", ["Sixto Durán-Ballén", "Jaime Roldós", "Eloy Alfaro"]],
+      ["¿Cuál fue el nombre del plan de campaña ecuatoriano en 1995?", "Soberanía I", ["Soberanía I", "Plan Cóndor", "Plan Libertad"]],
+      ["¿Quién fue el comandante del Agrupamiento Táctico Miguel Iturralde?", "TCRN Luis Hernández", ["TCRN Luis Hernández", "Coronel José Grijalba", "General Carlomagno Andrade"]],
+      ["¿Qué nombre recibió el bombardeo masivo del 22 de febrero de 1995?", "La noche de las luciérnagas", ["La noche de las luciérnagas", "Operación Centella", "Operación Relámpago"]],
+      ["¿Cuántos helicópteros peruanos fueron derribados en el conflicto del Cenepa?", "Tres", ["Tres", "Cinco", "Dos"]],
+      ["¿Qué documento se firmó el 26 de octubre de 1998?", "Acta de Brasilia", ["Acta de Brasilia", "Protocolo de Río de Janeiro", "Tratado de Guayaquil"]],
+      ["¿Qué territorio recibió Ecuador en Tiwintza tras la firma de paz?", "1 km² en cesión perpetua con fines ceremoniales", ["1 km² en cesión perpetua con fines ceremoniales", "5 km² para uso militar", "Sin territorio"]],
+      ["¿Qué zonas fueron ofrecidas a Ecuador para comercio internacional?", "Saramiriza y Pijuayal", ["Saramiriza y Pijuayal", "Tiwintza y Coangos", "Guayaquil y Quito"]],
+      ["¿Qué país se enfrentó a Ecuador en el conflicto del Cenepa?", "Perú", ["Perú", "Colombia", "Chile"]],
+      ["¿En qué año estableció Perú el Puesto de Vigilancia N.º 1, Soldado Pastor?", "1987", ["1987", "1995", "1981"]],
+      ["¿Qué destacamento ecuatoriano fue creado en 1979 para sustentar las posiciones en el Valle del Cenepa?", "Destacamento Coangos", ["Destacamento Coangos", "Destacamento Tiwintza", "Destacamento Saramiriza"]],
+      ["¿Qué agrupamiento creó Ecuador ante la amenaza peruana en diciembre de 1994?", "Agrupamiento General Iturralde", ["Agrupamiento General Iturralde", "Agrupamiento Carlomagno Andrade", "Agrupamiento Eloy Alfaro"]],
+      ["¿Qué oficial ecuatoriano informó sobre la presencia enemiga el 23 de enero de 1995?", "Coronel José Grijalba", ["Coronel José Grijalba", "TCRN Luis Hernández", "General Carlomagno Andrade"]],
+      ["¿Qué día se activó la alerta roja durante el conflicto del Cenepa?", "26 de enero de 1995", ["26 de enero de 1995", "22 de febrero de 1995", "29 de enero de 1942"]],
+      ["¿Qué agrupamiento se creó el 6 de febrero para reforzar la defensa ecuatoriana?", "Agrupamiento Carlomagno Andrade", ["Agrupamiento Carlomagno Andrade", "Agrupamiento General Iturralde", "Agrupamiento Eloy Alfaro"]],
+      ["¿Qué brigada especial fue organizada el 13 de febrero de 1995?", "Brigada Especial Eloy Alfaro", ["Brigada Especial Eloy Alfaro", "Brigada Especial Carlomagno Andrade", "Brigada Especial Iturralde"]],
+      ["¿Cuál fue el primer soldado ecuatoriano caído en el conflicto del Cenepa?", "Soldado Pico", ["Soldado Pico", "Soldado Pastor", "Soldado Tiwintza"]],
+      ["¿Qué fecha se retiró el primer contingente ecuatoriano tras los acuerdos de Itamaratí?", "1 de abril de 1995", ["1 de abril de 1995", "26 de enero de 1995", "22 de febrero de 1995"]],
+      ["¿Cuántos soldados ecuatorianos murieron durante el conflicto del Cenepa?", "31 soldados", ["31 soldados", "50 soldados", "20 soldados"]],
+      ["¿Qué país fue acusado por el Gral. Pinochet como agresor en el conflicto?", "Perú", ["Perú", "Ecuador", "Chile"]]
+    ];
 
     const form = document.getElementById("cuestionario");
-    preguntas.forEach(([pregunta], i) => {
+    preguntas.forEach(([pregunta, respuestaCorrecta, opciones], i) => {
       form.innerHTML += `
         <div class="pregunta">
           <label><strong>${i + 1}. ${pregunta}</strong></label><br>
-          <input type="text" class="respuesta" id="respuesta${i}">
-          <button type="button" onclick="verificarRespuesta(${i})">Verificar</button>
+          ${opciones
+            .map(
+              (opcion, j) =>
+                `<label><input type="radio" name="respuesta${i}" value="${opcion}"> ${opcion}</label><br>`
+            )
+            .join("")}
+          <button type="button" onclick="verificarRespuesta(${i}, '${respuestaCorrecta}')">Verificar</button>
           <div id="feedback${i}"></div>
         </div>
       `;
     });
 
-    function verificarRespuesta(index) {
-      const userInput = document.getElementById(`respuesta${index}`).value.trim();
-      const feedback = document.getElementById(`feedback${index}`);
-      const respuestaCorrecta = preguntas[index][1];
+    function verificarRespuesta(index, respuestaCorrecta) {
+      const opciones = document.getElementsByName(`respuesta${index}`);
+      let seleccion = "";
+      opciones.forEach((opcion) => {
+        if (opcion.checked) seleccion = opcion.value;
+      });
 
-      if (userInput === respuestaCorrecta) {
+      const feedback = document.getElementById(`feedback${index}`);
+      if (seleccion === respuestaCorrecta) {
         feedback.innerHTML = "✅ <span class='correcto'>Correcto</span>";
       } else {
         feedback.innerHTML = `❌ <span class='incorrecto'>Incorrecto. Respuesta esperada: ${respuestaCorrecta}</span>`;
